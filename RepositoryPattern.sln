@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern.Backend", "RepositoryPattern.Backend\RepositoryPattern.Backend.csproj", "{943DA99D-AF72-4609-A472-829544DC9B8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern.Entity", "RepositoryPattern.Entity\RepositoryPattern.Entity.csproj", "{E16F1F9D-3845-444D-911D-EE323E305F8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern.DataAccess", "RepositoryPattern.DataAccess\RepositoryPattern.DataAccess.csproj", "{05DE00E3-F115-4B9F-B33D-A41649E31AAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{943DA99D-AF72-4609-A472-829544DC9B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{943DA99D-AF72-4609-A472-829544DC9B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{943DA99D-AF72-4609-A472-829544DC9B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16F1F9D-3845-444D-911D-EE323E305F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16F1F9D-3845-444D-911D-EE323E305F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16F1F9D-3845-444D-911D-EE323E305F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16F1F9D-3845-444D-911D-EE323E305F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DE00E3-F115-4B9F-B33D-A41649E31AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DE00E3-F115-4B9F-B33D-A41649E31AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DE00E3-F115-4B9F-B33D-A41649E31AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DE00E3-F115-4B9F-B33D-A41649E31AAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
