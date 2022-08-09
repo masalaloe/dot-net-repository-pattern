@@ -12,6 +12,9 @@ namespace RepositoryPattern.Entity.Models
         
         public string Name { get; set; }
 
-        public virtual Author Author { get; set; }
+
+        public int? AuthorId { get; set; }
+
+        public virtual Author? Author { get; set; }
     }
 }

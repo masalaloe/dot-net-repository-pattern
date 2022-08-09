@@ -7,17 +7,28 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern.DataAccess.Interfaces
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T, TKey> where T : class
     {
-        IQueryable<T> GetAll();
-        T GetById(int id);
-        void Add(T entity);
-        void Update(T entity);
-        void Delete(T entity);
-        void Delete(int id);
+        Task<IQueryable<T>> GetAllAsync();
 
-        IQueryable<T> FindAll();
+        IQueryable<T> GetAll();
+
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);
+        
+        Task<T?> GetByIdAsync(TKey id);
+
+        T? GetById(TKey id);
+        
+        Task CreateAsync(T entity);
+
         void Create(T entity);
+
+        Task UpdateAsync(T entity);
+        
+        void Update(T entity);
+
+        void Delete(T entity);
+
+        void Delete(TKey id);
     }   
 }
